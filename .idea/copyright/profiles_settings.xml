@@ -1,7 +1,7 @@
 <component name="CopyrightManager">
-  <settings default="Square">
-    <module2copyright>
-      <element module="Project Files" copyright="Square" />
-    </module2copyright>
+  <settings default="APL 2.0 (Main)">
+    <LanguageOptions name="__TEMPLATE__">
+      <option name="addBlankAfter" value="false" />
+    </LanguageOptions>
   </settings>
 </component>
