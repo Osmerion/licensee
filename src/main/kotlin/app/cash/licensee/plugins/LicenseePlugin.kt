@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 Square, Inc.
+ * Copyright (C) 2025 Square, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,8 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+// TODO Move package eventually
+@file:Suppress("PackageDirectoryMismatch")
 package app.cash.licensee
 
+import app.cash.licensee.internal.MutableLicenseeExtension
 import com.android.build.api.variant.AndroidComponentsExtension
 import java.util.Locale.ROOT
 import org.gradle.api.Plugin

@@ -15,6 +15,7 @@
  */
 package app.cash.licensee
 
+import app.cash.licensee.internal.toSpdxLicense
 import assertk.assertThat
 import assertk.assertions.containsExactly
 import assertk.assertions.doesNotContain

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 Square, Inc.
+ * Copyright (C) 2025 Square, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,8 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+// TODO Move package eventually
+@file:Suppress("PackageDirectoryMismatch")
 package app.cash.licensee
 
+import app.cash.licensee.internal.DependencyConfig
+import app.cash.licensee.internal.DependencyCoordinates
+import app.cash.licensee.internal.ValidationConfig
+import app.cash.licensee.internal.ValidationResult
+import app.cash.licensee.internal.loadDependencyCoordinates
+import app.cash.licensee.internal.loadPomInfo
+import app.cash.licensee.internal.normalizeLicenseInfo
+import app.cash.licensee.internal.toDependencyCoordinates
+import app.cash.licensee.internal.validateArtifacts
 import java.io.File
 import java.io.Serializable
 import kotlinx.serialization.builtins.ListSerializer
