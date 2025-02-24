@@ -43,11 +43,10 @@ dependencies {
 
 kotlin {
   jvmToolchain(11)
-  target {
-    compilations.configureEach {
-      // Ensure compatibility with old Gradle versions. Keep in sync with LicenseePlugin.kt.
-      compilerOptions.options.apiVersion.set(KotlinVersion.KOTLIN_1_8)
-    }
+
+  compilerOptions {
+    // Ensure compatibility with old Gradle versions. Keep in sync with LicenseePlugin.kt.
+    apiVersion = KotlinVersion.KOTLIN_1_8
   }
 }
 
