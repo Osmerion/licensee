@@ -1,0 +1,4 @@
+{
+  "extends": ["github>Osmerion/licensee//.github/renovate.json5"],
+  "forkProcessing": "enabled"
+}
