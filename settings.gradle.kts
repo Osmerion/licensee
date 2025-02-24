@@ -26,3 +26,5 @@ dependencyResolutionManagement {
     google()
   }
 }
+
+enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
