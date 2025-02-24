@@ -13,7 +13,6 @@ plugins {
   alias(libs.plugins.kotlin.jvm)
   alias(libs.plugins.kotlin.serialization)
   alias(libs.plugins.publish)
-  alias(libs.plugins.spotless)
   id("dummy")
   id("java-gradle-plugin")
 }
@@ -160,18 +159,6 @@ publishing {
   }
 }
 
-spotless {
-  kotlin {
-    target("**/*.kt")
-    targetExclude("**/src/test/test-build-logic/build/**", "**/generated-sources/**")
-    ktlint(libs.ktlint.get().version).editorConfigOverride(mapOf(
-      "ktlint_standard_filename" to "disabled",
-      // Making something an expression body should be a choice around readability.
-      "ktlint_standard_function-expression-body" to "disabled"
-    ))
-    licenseHeaderFile(rootProject.file("gradle/license-header.txt"))
-  }
-}
 
 dependencies {
   compileOnly(libs.androidGradleApi)
