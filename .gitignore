@@ -1,12 +1,14 @@
-# IntelliJ IDEA
-/.idea
+/.gradle
+
+!/.idea
+/.idea/*
 !/.idea/copyright
-*.iml
+!/.idea/runConfigurations
+!/.idea/scopes
+!/.idea/icon.png
 
-# Gradle
-.gradle
-build
-/reports
+/.kotlin
 
-# Android
-local.properties
+/build
+
+/local.properties
