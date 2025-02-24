@@ -27,7 +27,6 @@ import org.gradle.api.provider.Property
 import org.gradle.api.provider.Provider
 import org.gradle.api.provider.SetProperty
 
-@Suppress("unused") // Public API for Gradle build scripts.
 interface LicenseeExtension {
   /**
    * Allow artifacts with a license that matches a SPDX identifier.
