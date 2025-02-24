@@ -8,6 +8,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 
 plugins {
   alias(libs.plugins.android.lint)
+  alias(libs.plugins.binary.compatibility.validator)
   alias(libs.plugins.dokka)
   alias(libs.plugins.kotlin.jvm)
   alias(libs.plugins.kotlin.serialization)

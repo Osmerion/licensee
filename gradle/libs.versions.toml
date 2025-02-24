@@ -21,6 +21,10 @@ ktlint = "com.pinterest.ktlint:ktlint-cli:1.3.1"
 kotlinpoet = "com.squareup:kotlinpoet:2.0.0"
 
 [plugins]
+# org.jetbrains.kotlinx.binary-compatibility-validator - binary-compatibility-validator
+# https://github.com/Kotlin/binary-compatibility-validator
+binary-compatibility-validator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version = "0.17.0" }
+
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 android-lint = { id = "com.android.lint", version.ref = "agp" }
