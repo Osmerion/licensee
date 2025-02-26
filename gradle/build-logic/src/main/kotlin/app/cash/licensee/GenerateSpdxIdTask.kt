@@ -100,7 +100,7 @@ private fun SpdxLicenses.spdxIdCompanion(): TypeSpec = TypeSpec.companionObjectB
   for ((_, license) in identifierToLicense) {
     addProperty(
       PropertySpec.builder(license.identifier, SpdxId)
-        .addAnnotation(JvmStatic::class)
+        .addAnnotation(JvmField::class)
         .addKdoc(license.name)
         .initializer("%T(%S, %S, %S)", SpdxId, license.id, license.name, license.targetUrl)
         .build(),
