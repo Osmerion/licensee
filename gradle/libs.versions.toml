@@ -16,7 +16,7 @@ maven-modelBuilder = "org.apache.maven:maven-model-builder:3.9.9"
 
 androidx-gradlePluginLints = "androidx.lint:lint-gradle:1.0.0-alpha03"
 
-kotlinpoet = "com.squareup:kotlinpoet:2.1.0"
+kotlinpoet = "com.squareup:kotlinpoet:2.2.0"
 
 [plugins]
 # org.jetbrains.kotlinx.binary-compatibility-validator - binary-compatibility-validator
